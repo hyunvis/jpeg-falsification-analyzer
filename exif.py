@@ -26,6 +26,7 @@ atime = datetime.datetime.fromtimestamp(os.path.getatime(f)) #access time
 atimea = atime.strftime('%Y:%m:%d %H:%M:%S')
 mtimea = mtime.strftime('%Y:%m:%d %H:%M:%S')
 ctimea = ctime.strftime('%Y:%m:%d %H:%M:%S')
+
 print('\n')
 print('SYSTEM DATA')
 print('ctime')
@@ -34,12 +35,10 @@ print('mtime')
 print(mtimea)
 print('atime')
 print(atimea)
+print('\n')
 
-print('test')
-print(DateTime)
-print(mtimea)
 
-if (DateTime) != (mtimea) :
+if str(DateTime) != str(mtimea) :
 	print('File Falsification Detected!!!!')
 else:
 	print('Good as well')
@@ -52,4 +51,3 @@ if ord(checker[0]) == 0xFF and ord(checker[1]) == 0xD8 :
 	print('JPEG Checked')
 else:
 	print('Not JPEG')
-
