@@ -47,7 +47,7 @@ else:
 handle.seek(0)
 checker = handle.read(100)
 
-if ord(checker[0]) == 0xFF and ord(checker[1]) == 0xD8 : 
+if ord(chr(checker[0])) == 0xFF and ord(chr(checker[1])) == 0xD8 : 
 	print('JPEG Checked')
 else:
 	print('Not JPEG')
